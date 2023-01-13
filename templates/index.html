@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/main.css') }}">
+    <title>Main page</title>
+</head>
+
+<body>
+    <div class="container">
+        <header id="header">
+            <h1>King-dog-kong</h1>
+            <h2>Мы developer</h2>
+        </header>
+
+    </div>
+
+    <div class="container">
+        <nav id="nav">
+            <a href="#">Women clothes</a>
+            <a href="#">Men clothes</a>
+            <a href="#">Shoes</a>
+            <a href="#">Accessories</a>
+            <a class="sign" href="#">Sign-in</a>
+            <a class="cart" href="#">Shopping cart</a>
+        </nav>
+    </div>
+    <div class="container">
+        <div id="filter">
+            <ul>
+                <li><input type="checkbox">Price low to high</li>
+                <li><input type="checkbox">Price high to low</li>
+                <li><input type="checkbox">Name A-Z</li>
+                <li><input type="checkbox">Newest first</li>
+                <li><button class="btn">Sort</button></li>
+            </ul>
+        </div>
+        <div id="search"><input type="search" placeholder="Type what you want to find..."> <button
+                class="sbtn">Search</button></div>
+
+        <div id="parent">
+            {% for good in goods_staf %}
+            <div class="child"><a href="http://127.0.0.1:5000/good/?link={{good.name}}" class="product">
+                    <div class="product-photo"><img src="{{good.photo}}" alt=""></div><span
+                        class="description">{{good.name}}</span> <br><span class="price">{{good.price}}</span>
+                </a></div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="container">
+        <footer id="footer">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+            <p class="rights">&copy; All rights reserved 2022</p>
+        </footer>
+    </div>
+</body>
+
+</html>

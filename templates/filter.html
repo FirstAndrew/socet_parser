@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="filter.css">
+    <title>Filter</title>
+</head>
+<body>
+    <div class="container">
+        <header id="header">
+            <h1>King-dog-kong</h1> 
+            <h2>This store will change your life!</h2>
+        </header>
+
+    </div>
+    
+    <div class="container">
+        <nav id="nav">
+            <a href="#">Women clothes</a>
+            <a href="#">Men clothes</a>
+            <a href="#">Shoes</a>
+            <a href="#">Accessories</a>
+            <a class="sign" href="#">Sign-in</a>
+            <a class="cart" href="#">Shopping cart</a>
+        </nav>
+    </div>
+    <div class="container">
+        <div id="filter">
+            <ul>
+                <li><input type="checkbox">Price low to high</li>
+                <li><input type="checkbox">Price high to low</li>
+                <li><input type="checkbox">Name A-Z</li>
+                <li><input type="checkbox">Newest first</li>
+                <li><button class="btn">Sort</button></li>
+            </ul>
+        </div>
+        <div id="search"><input type="search" placeholder="Type what you want to find..."> <button class="sbtn">Search</button></div>
+    </div>
+    <div id="container" class="mainside">
+		<div id="content">
+            <div id="sidebar">
+                <div class="choice">
+                    <h5>Filters</h5>
+                    <ul> 
+                        <li>
+                            <div class="list">
+                                <h4> Price filter</h4>
+                                <div id="prices-label">5000 - 50000 руб.</div>
+                                <br>
+                                <input type="hidden" id="min-price" name="min_price" value="5000">
+                                <input type="hidden" id="max-price" name="max_price" value="50000">
+                                <div id="prices"></div>
+                            </div></li>
+                        <li>    <div class="list">
+                            <h4>Brands</h4>
+                            <div id="brands">
+                                <div class="checkbox"><label><input type="checkbox" name="brands[]" value="1"> Zara</label></div>
+                                <div class="checkbox"><label><input type="checkbox" name="brands[]" value="2"> H&D</label></div>
+                                <div class="checkbox"><label><input type="checkbox" name="brands[]" value="3"> Breshka</label></div>
+                                <div class="checkbox"><label><input type="checkbox" name="brands[]" value="4"> Nike</label></div>
+                            </div></li>
+                        <li>    <div class="list">
+                            <h4>Sizes</h4>
+                            <div id="sizes">
+                                <div class="checkbox"><label><input type="checkbox" name="sizes[]" value="1"> S</label></div>
+                                <div class="checkbox"><label><input type="checkbox" name="sizes[]" value="2"> M</label></div>
+                                <div class="checkbox"><label><input type="checkbox" name="sizess[]" value="3"> L</label></div>
+                                <div class="checkbox"><label><input type="checkbox" name="sizes[]" value="4"> XL</label></div>
+                            </div></li>
+                        <li>    <div class="list">
+                            <h4>Seasons</h4>
+                            <div id="seasons">
+                                <div class="checkbox"><label><input type="checkbox" name="season[]" value="1"> Winter</label></div>
+                                <div class="checkbox"><label><input type="checkbox" name="season[]" value="2"> Spring</label></div>
+                                <div class="checkbox"><label><input type="checkbox" name="season[]" value="3"> Summer</label></div>
+                                <div class="checkbox"><label><input type="checkbox" name="season[]" value="4"> Autumn</label></div>
+                            </div></li>
+                        <li>    <div class="list">
+                            <h4>In stock</h4>
+                            <div id="stock">
+                                <div class="checkbox"><label><input type="checkbox" name="stock[]" value="1"> In stock</label></div>
+                                <div class="checkbox"><label><input type="checkbox" name="stock[]" value="2"> On order</label></div>
+                            </div></li>
+                    </ul>
+                </div>
+            </div>
+			<div id="parent">
+                <div class="child"><a href=""class="product"> <div class="product-photo"><img src="https://content1.rozetka.com.ua/goods/images/big/264394019.jpg" alt=""></div><span class="description">Подарочный набор Mr.Scrubber Even</span> <br><span class="price">499g</span></a></div>
+                <div class="child"><a href=""class="product"><div class="product-photo"><img src="https://content2.rozetka.com.ua/goods/images/big/301534166.jpg" alt=""></div><span class="description"></span> <br><span class="price"></span></a></div>
+                <div class="child"><a href=""class="product"><div class="product-photo"><img src="https://content.rozetka.com.ua/goods/images/big/232363959.jpg" alt=""></div><span class="description"></span> <br><span class="price"></span></a></div>
+                <div class="child"><a href=""class="product"><div class="product-photo"><img src="https://content1.rozetka.com.ua/goods/images/big/208437614.png" alt=""></div><span class="description"></span> <br><span class="price"></span></a></div>
+                <div class="child"><a href=""class="product"><div class="product-photo"><img src="https://content2.rozetka.com.ua/goods/images/big/236500168.jpg" alt=""></div><span class="description"></span> <br><span class="price"></span></a></div>
+                <div class="child"><a href=""class="product"><div class="product-photo"><img src="https://content1.rozetka.com.ua/goods/images/big/245863301.png" alt=""></div><span class="description"></span> <br><span class="price"></span></a></div>
+                <div class="child"><a href=""class="product"><div class="product-photo"><img src="https://content1.rozetka.com.ua/goods/images/big/245861037.jpg" alt=""></div><span class="description"></span> <br><span class="price"></span></a></div>
+                <div class="child"><a href=""class="product"><div class="product-photo"><img src="https://content.rozetka.com.ua/goods/images/big/246182182.jpg" alt=""></div><span class="description"></span> <br><span class="price"></span></a></div>
+                <div class="child"><a href=""class="product"><div class="product-photo"><img src="https://content2.rozetka.com.ua/goods/images/big/98561596.jpg" alt=""></div><span class="description"></span> <br><span class="price"></span></a></div>
+                <div class="child"><a href=""class="product"><div class="product-photo"><img src="https://content2.rozetka.com.ua/goods/images/big/279625950.jpg" alt=""></div><span class="description"></span> <br><span class="price"></span></a></div>
+                <div class="child"><a href=""class="product"><div class="product-photo"><img src="https://content1.rozetka.com.ua/goods/images/big/289964432.jpg" alt=""></div><span class="description"></span> <br><span class="price"></span></a></div>
+                <div class="child"><a href=""class="product"><div class="product-photo"><img src="https://content1.rozetka.com.ua/goods/images/big/170584017.jpg" alt=""></div><span class="description"></span> <br><span class="price"></span></a></div>
+            </div>
+		</div>
+
+    </div>
+
+        <div class="container">
+            <footer id="footer">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+                <p class="rights">&copy; All rights reserved 2022</p>
+            </footer>
+        </div>
+	</div>
+</body>
+</html>
